@@ -1,8 +1,8 @@
 #First function of HW3
 
+#Calculating age in months
 
-random100<-function (x)
-  [return(x->1:100)]
+agemos<-function(x){
+  (studydate - bdate)/30.4
+}
 
-
-increase(5)

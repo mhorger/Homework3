@@ -1,0 +1,38 @@
+---
+title: "Examples"
+author: "mhorger"
+date: "February 12, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Age in months calculator 
+
+```{r}
+
+
+bdate<-as.Date (c("2007-06-22", "2004-02-13"))
+studydate<-as.Date (c("2017-07-22", "2018-02-18"))
+agemos<-function(x){
+  ((studydate[x] - bdate[x])/30.4)
+}
+
+agemos(1)
+
+#how do we change the output for this so it says months? 
+```
+
+## Walk experience calculator 
+
+```{r}
+walkonset<-as.Date (c("2017-07-10", "2018-02-11"))
+walkexperience<-function(x){
+  (studydate[x] - walkonset[x])
+}
+
+walkexperience(1)
+```
+
